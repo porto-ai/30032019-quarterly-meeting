@@ -1,6 +1,9 @@
+jupyter==1.0.0
 Keras==2.2.4
-nltk==3.4
-numpy==1.16.2
+matplotlib==3.0.3
 pandas==0.24.2
+plotly==3.7.1
 scikit-learn==0.20.3
-tensorflow==1.9.0
+scipy==1.2.1
+tensorflow==1.13.1
+

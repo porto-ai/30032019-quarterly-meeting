@@ -1,14 +1,21 @@
-# Quarterly Meeting #1 - 30-03-2019
+# portoai-nlp
+## Introduction
+In this workshop you will have the opportunity to work directly with real-world problem by exploring 
+different approaches to the Kaggle competition: [Jigsaw Toxic Comment Classification challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge).
+The competition had the objective of developing a model capable of predicting a probability of six different types of toxicity for Wikipedia comments.
+The types of toxicity are:
+- toxic
+- severe_toxic
+- obscene
+- threat
+- insult
+- identity_hate
+Any of the comments can have more than one type of toxicity (or none at all) so we consider this a multi-label classification problem.
+Before digging deeper, **make sure you understand what is the difference between multi-class and multi-label classification**. 
+## Instructions
+### 1 - Install Python dependencies
 
-## Dataset
-
-In the practical component of the event, we will use the [Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge) dataset:
-1. You'll need to create a Kaggle account, in case you don't have one already, and log in
-2. Go to the *Data* tab, and click on *Download all*
-
-## Project Dependencies
-
-For completing all the proposed exercises, you'll need to clone this repository and install the required dependencies. We recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html), if you're new to package manager systems, which allows you to create a separate development environment, isolated for your own convenience and safety :) Feel free to use any other tools, like pipenv or pure virtualenv.
+For completing all the proposed exercises, you'll need to clone this repository and install the required dependencies. We recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html), if you're new to package manager systems, which allow you to create a separate development environment, isolated for your own convenience and safety :) Feel free to use any other tools, like pipenv or pure virtualenv.
 
 Just make sure you are using Python3.6 or newer.
 
@@ -22,13 +29,20 @@ Just make sure you are using Python3.6 or newer.
    + Linux/macOS: `source activate test_env`
 4. Go to your cloned project folder and install the requirements on you newly created environment
    + `conda install --file requirements.txt`
-5. Run your python scripts as usual
-   + `python your_own_script.py`
-6. Deactivate the environment
+5. Run your python scripts or jupyter-notebook as usual
+   + `jupyter-notebook`
+6. Deactivate the environment, once you're done for the day
    + Windows: `deactivate test_env`
    + Linux/macOS: `source deactivate test_env`
 7. You can remove the environment for once and for all
    + `conda remove -n test_env -all`
 
-
-
+### 2 - Download Kaggle dataset
+Go to https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge , sign in (or create an account first) and then download the data for the Kaggle challenge. If you can not find it, try downloading it directly using [this link](https://www.kaggle.com/c/8076/download-all).
+Extract the csv files inside the `portoai-nlp` directory.
+You should also [download the fastText embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip) that willbe later used in the notebooks.
+### 3 - Run Jupyter notebooks
+```
+jupyter-notebook
+```
+Follow the notebooks' order and try to complete the exercises (we will provide these later).
