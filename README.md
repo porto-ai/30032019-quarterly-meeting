@@ -10,12 +10,13 @@ The types of toxicity are:
 - threat
 - insult
 - identity_hate
+
 Any of the comments can have more than one type of toxicity (or none at all) so we consider this a multi-label classification problem.
 Before digging deeper, **make sure you understand what is the difference between multi-class and multi-label classification**. 
 ## Instructions
 ### 1 - Install Python dependencies
 
-For completing all the proposed exercises, you'll need to clone this repository and install the required dependencies. We recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html), if you're new to package manager systems, which allow you to create a separate development environment, isolated for your own convenience and safety :) Feel free to use any other tools, like pipenv or pure virtualenv.
+For completing all the proposed exercises, you'll need to clone this repository and install the required dependencies. We recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html), if you're new to package manager systems, which allows you to create a separate development environment, isolated for your own convenience and safety :) Feel free to use any other tools, like pipenv or pure virtualenv.
 
 Just make sure you are using Python3.6 or newer.
 
